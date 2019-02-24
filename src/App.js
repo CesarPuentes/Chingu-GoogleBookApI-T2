@@ -6,19 +6,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <div class="jumbotron">
+      <h1 class="display-4">This a simple webpage to use the Google Books API.</h1>
+      </div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+
+
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+        <input class="search_input" type="text" name="" placeholder="Search..." />
+        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Enter the book name
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+
         </header>
       </div>
     );
