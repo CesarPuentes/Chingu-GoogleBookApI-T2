@@ -15,7 +15,7 @@ import BookAPI from './components/BookAPI';
 let bookList = [];
 let books = require('google-books-search');
 let options = {
-  key: "AIzaSyBLIPF2e0Wg3PCzNfMLgx1W7nJL0l4TnXU",
+  key: "",
   field: 'title',
   offset: 0,
   limit: 10,
