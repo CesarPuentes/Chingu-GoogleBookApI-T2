@@ -34,46 +34,51 @@
 
 /*https://bootsnipp.com/snippets/GaeQR*/
 
-    .searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    min-width: 200px;
-    background-color: #ff230c;
-    border-radius: 30px;
-    padding: 10px;
-    }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 
-    .search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
+.searchbar{
+margin-bottom: auto;
+margin-top: auto;
+height: 60px;
+min-width: 200px;
+background-color: #ff230c;
+border-radius: 30px;
+padding: 10px;
+}
 
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 450px;
-    caret-color:black;
-    transition: width 0.4s linear;
-    }
+.search_input{
+color: white;
+border: 0;
+outline: 0;
+background: none;
+width: 0;
+caret-color:transparent;
+line-height: 40px;
+transition: width 0.4s linear;
+}
 
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #ff230c;
-    }
+.searchbar:hover > .search_input{
+padding: 0 10px;
+width: 450px;
+caret-color:black;
+transition: width 0.4s linear;
+}
 
-    .search_icon{
-    height: 40px;
-    width: 40px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    }
+.searchbar:hover > .search_icon{
+background: white;
+color: #ff230c;
+}
+
+.search_icon{
+height: 40px;
+width: 40px;
+float: right;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color:white;
+}
